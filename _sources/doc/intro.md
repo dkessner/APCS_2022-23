@@ -1,9 +1,4 @@
-
-# Welcome to AP Computer Science!
-
-<div style="text-align:center;" width="100%">
-<iframe src="phyllotaxis/index.html" height="420px" width="420px"></iframe>
-</div>
+# Introduction
 
 We are going to learn how to program in Java, a programming language that has
 been in use by software developers for over 20 years. 
@@ -30,7 +25,6 @@ A exam, as well as to move on to more in-depth studies of theoretical computer
 science and/or practical software development.
 
 Let's code!
-
 
 
 Dr. Kessner

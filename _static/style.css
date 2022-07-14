@@ -1,7 +1,15 @@
 
 
+@font-face {
+    font-family: 'ComicMono';
+    src: url('../fonts/ComicMono.ttf') format('truetype');
+}
+
+
 :root {
-    --pst-font-family-base: Courier, monospace; /* reset CSS variable */
+    /* reset CSS variables */
+    --pst-font-family-base: Georgia, serif;
+    --pst-font-family-monospace: 'ComicMono', 'Courier New', monospace;
 }
 
 
@@ -15,5 +23,10 @@ body,
 
 iframe {
     border: none;
+}
+
+
+h1 {
+    text-align: center;
 }
 

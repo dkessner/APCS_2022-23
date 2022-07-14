@@ -37,15 +37,15 @@ pages for each command.
 
 | Unix | Windows | Function |
 |------|---------|----------|
-|ls |dir |list files in directory |
-|cd |cd |change directory |
-|cat |type |print contents of file to console |
-|mv |move |move file or directory |
-|cp |copy |copy file or directory |
-|mkdir |md |make directory |
-|rm / rmdir |del / rmdir |remove file / directory |
-|which |where |find full path to specified command |
-|pwd |cd |print current (working) directory |
+|`ls` |`dir` |list files in directory |
+|`cd` |`cd` |change directory |
+|`cat` |`type` |print contents of file to console |
+|`mv` |`move` |move file or directory |
+|`cp` |`copy` |copy file or directory |
+|`mkdir` |`md` |make directory |
+|`rm` / `rmdir` |`del` / `rmdir` |remove file / directory |
+|`which` |`where` |find full path to specified command |
+|`pwd` |`cd` |print current (working) directory |
 
 
 
