@@ -1,9 +1,6 @@
----
-title: Class Info
-layout: page
----
+# Class Info
 
-__AP Computer Science A (APCS)__
+__AP Computer Science A (APCS)__  
 __2020-21__  
 __Dr. Kessner__  
 

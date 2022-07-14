@@ -1,7 +1,4 @@
----
-title: Resources
-layout: page
----
+# Resources
 
 ## Textbooks
 

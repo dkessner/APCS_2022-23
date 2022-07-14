@@ -1,7 +1,4 @@
----
-title: Software installation - Windows
-layout: page
----
+# Software installation - Windows
 
 ## Install Chocolatey
 

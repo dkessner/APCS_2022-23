@@ -1,7 +1,4 @@
----
-title: Schedule
-layout: page
----
+# Schedule
 
 ## Semester 1
 
