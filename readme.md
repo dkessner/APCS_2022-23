@@ -1,6 +1,14 @@
 # APCS
 
-AP Computer Science 2022-23
+AP Computer Science 2022-23  
+Dr. Kessner  
+Marlborough School, Los Angeles  
+
+[live site](https://dkessner.github.io/APCS/)
+
+[APCS 2021-22 website](https://dkessner.github.io/APCS_2021-22/)
+[APCS 2021-22 repo](https://github.com/dkessner/APCS_2021-22)
+
 
 ## Usage
 
