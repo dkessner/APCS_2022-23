@@ -5,7 +5,7 @@
 
 #######################################################################################
 # Book settings
-title                       : AP Computer Science 2022-23 Dr. Kessner
+title                       : APCS <br/> AP Computer Science <br/> 2022-23 <br/> Dr. Kessner
 author                      : Dr. Kessner  # The author of the book
 copyright                   : "2022"  # Copyright year to be placed in the footer
 logo                        : assets/images/Mvision.jpg  # A path to the book logo
