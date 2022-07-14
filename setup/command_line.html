@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Accessing the command line &#8212; APCS</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Install Homebrew" href="installation_mac.html" />
+    <link rel="prev" title="Setup" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">APCS</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AP Computer Science!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../doc/index.html">
+   Info
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../doc/class_info.html">
+     Topics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../doc/resources.html">
+     Textbooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../doc/schedule.html">
+     Semester 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../doc/study_advice.html">
+     Mistakes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Setup
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Accessing the command line
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="installation_mac.html">
+     Install Homebrew
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="installation_windows.html">
+     Install Chocolatey
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/dkessner/APCS"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Fsetup/command_line.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/setup/command_line.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Accessing the command line
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-commands">
+   Basic commands
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#miscellaneous-notes">
+   Miscellaneous notes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#current-directory">
+     Current directory
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#file-paths">
+     File paths
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wildcards">
+     Wildcards
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#path">
+     PATH
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scripting">
+     Scripting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Accessing the command line</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Accessing the command line
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-commands">
+   Basic commands
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#miscellaneous-notes">
+   Miscellaneous notes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#current-directory">
+     Current directory
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#file-paths">
+     File paths
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wildcards">
+     Wildcards
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#path">
+     PATH
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scripting">
+     Scripting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <p>Using the command line lets you harness the full power of your computer.  This
+page contains an outline of concepts that you should become familiar with.
+However, it is not a comprehensive description of any of them, and you should
+look up any concept that you are unsure about.</p>
+<p>When you are first using the command line, it will feel awkward and it may
+seem difficult to get things done.   You will forget the command names
+and the required arguments and flags, and you may have to look up the same
+command several times before you internalize its usage.    However, with
+just a little practice, you will become much faster at using the command line
+than you are at clicking buttons.  You will also be able to do things
+that you can’t do through the standard graphical user interface.</p>
+<section id="accessing-the-command-line">
+<h1>Accessing the command line<a class="headerlink" href="#accessing-the-command-line" title="Permalink to this headline">#</a></h1>
+<p>In Mac OS, you can access the command line through the Terminal application,
+which provides access to a command line shell called <code class="docutils literal notranslate"><span class="pre">bash</span></code>.  Because Mac OS
+is a descendant of BSD Unix, you can use all the standard Unix commands in
+Terminal.  In the following, we use “Unix” as a generic term that includes Mac OS
+and Linux.</p>
+<p>On Windows, the command line interpreter is called <code class="docutils literal notranslate"><span class="pre">cmd</span></code> or
+Command Line.   The <code class="docutils literal notranslate"><span class="pre">cmd</span></code> commands are based on the old DOS
+commands and provide similar functionality to the Unix commands</p>
+</section>
+<section id="basic-commands">
+<h1>Basic commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">#</a></h1>
+<p>You should familiarize yourself with these commands.  You can find an
+abundance of tutorials online about the command line, as well as reference
+pages for each command.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Unix</p></th>
+<th class="head"><p>Windows</p></th>
+<th class="head"><p>Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ls</p></td>
+<td><p>dir</p></td>
+<td><p>list files in directory</p></td>
+</tr>
+<tr class="row-odd"><td><p>cd</p></td>
+<td><p>cd</p></td>
+<td><p>change directory</p></td>
+</tr>
+<tr class="row-even"><td><p>cat</p></td>
+<td><p>type</p></td>
+<td><p>print contents of file to console</p></td>
+</tr>
+<tr class="row-odd"><td><p>mv</p></td>
+<td><p>move</p></td>
+<td><p>move file or directory</p></td>
+</tr>
+<tr class="row-even"><td><p>cp</p></td>
+<td><p>copy</p></td>
+<td><p>copy file or directory</p></td>
+</tr>
+<tr class="row-odd"><td><p>mkdir</p></td>
+<td><p>md</p></td>
+<td><p>make directory</p></td>
+</tr>
+<tr class="row-even"><td><p>rm / rmdir</p></td>
+<td><p>del / rmdir</p></td>
+<td><p>remove file / directory</p></td>
+</tr>
+<tr class="row-odd"><td><p>which</p></td>
+<td><p>where</p></td>
+<td><p>find full path to specified command</p></td>
+</tr>
+<tr class="row-even"><td><p>pwd</p></td>
+<td><p>cd</p></td>
+<td><p>print current (working) directory</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="miscellaneous-notes">
+<h1>Miscellaneous notes<a class="headerlink" href="#miscellaneous-notes" title="Permalink to this headline">#</a></h1>
+<section id="current-directory">
+<h2>Current directory<a class="headerlink" href="#current-directory" title="Permalink to this headline">#</a></h2>
+<p>When working on the command line (in both Unix and Windows) you need to be
+aware of your <em>current directory</em> (sometimes called <em>working
+directory</em>).  When you start up the command line shell, you begin in your
+<em>home directory</em>, i.e. your current directory starts out as your home
+directory.  On both Unix and Windows, <code class="docutils literal notranslate"><span class="pre">.</span></code> (dot) refers to the
+current directory, and <code class="docutils literal notranslate"><span class="pre">..</span></code> (dot dot) refers to the directory one
+level back.  On Unix systems, you can refer to your home directory with the
+<code class="docutils literal notranslate"><span class="pre">~</span></code> (tilde) symbol, and you can jump directly back to your home
+directory by using <code class="docutils literal notranslate"><span class="pre">cd</span></code> with no additional arguments.</p>
+</section>
+<section id="file-paths">
+<h2>File paths<a class="headerlink" href="#file-paths" title="Permalink to this headline">#</a></h2>
+<p>On Unix, directories in file paths are separated by a forward slash
+(<code class="docutils literal notranslate"><span class="pre">/</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~/</span><span class="n">temp</span><span class="o">/</span><span class="n">hello</span> 
+</pre></div>
+</div>
+<p>On Windows, directories in file paths are separated by a backslash
+(<code class="docutils literal notranslate"><span class="pre">\</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">kessnerd</span>\<span class="n">temp</span>\<span class="n">hello</span>
+</pre></div>
+</div>
+</section>
+<section id="wildcards">
+<h2>Wildcards<a class="headerlink" href="#wildcards" title="Permalink to this headline">#</a></h2>
+<p>On both Unix and Windows, you can use <code class="docutils literal notranslate"><span class="pre">*</span></code> (star) as a wildcard
+that will match any string, e.g. <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means “all files with
+extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code>”.</p>
+</section>
+<section id="path">
+<h2>PATH<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h2>
+<p>Both Unix and Windows use environment variables, and in
+particular an environment variabled called <code class="docutils literal notranslate"><span class="pre">PATH</span></code>, which contains a
+list of directories.   When the user types in a command, the operating
+system goes through each directory in the list, searching for the command
+executable, and running the executable when it finds it. If you write a
+command line program and want to be able to run it from any directory, you must
+put the executable in a directory that is in the <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p>
+</section>
+<section id="scripting">
+<h2>Scripting<a class="headerlink" href="#scripting" title="Permalink to this headline">#</a></h2>
+<p>A <em>script</em> is just another name for a program that
+is run through an interpreter.  Command line scripts are run by the
+command line interpreter.  A script can be as simple as a few commands.
+On the other hand, scripts on Unix (bash scripts) or Windows (batch
+files) can also use standard programming constructs such as variables,
+conditionals, loops, and functions.  Note however that while these
+programming constructs are available, they are not as easy to use as in a more
+polished programming language like Python or C/C++/Java.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./setup"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Setup</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="installation_mac.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Install Homebrew</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dr. Kessner<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
