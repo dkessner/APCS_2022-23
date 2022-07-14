@@ -1,7 +1,4 @@
----
-title: Study Advice
-layout: page
----
+# Study Advice
 
 Hello APCS coders!
 

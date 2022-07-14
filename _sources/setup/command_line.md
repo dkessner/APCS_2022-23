@@ -1,7 +1,4 @@
----
-title: Command Line
-layout: page
----
+# Command Line
 
 Using the command line lets you harness the full power of your computer.  This
 page contains an outline of concepts that you should become familiar with.

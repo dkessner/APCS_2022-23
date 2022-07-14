@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Accessing the command line &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
+    <title>Command Line &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Install Homebrew" href="installation_mac.html" />
+    <link rel="next" title="Software installation - Mac" href="installation_mac.html" />
     <link rel="prev" title="Setup" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -127,22 +127,22 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../doc/class_info.html">
-     Topics
+     Class Info
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../doc/resources.html">
-     Textbooks
+     Resources
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../doc/schedule.html">
-     Semester 1
+     Schedule
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../doc/study_advice.html">
-     Mistakes
+     Study Advice
     </a>
    </li>
   </ul>
@@ -159,17 +159,17 @@ const thebe_selector_output = ".output, .cell_output"
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Accessing the command line
+     Command Line
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="installation_mac.html">
-     Install Homebrew
+     Software installation - Mac
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="installation_windows.html">
-     Install Chocolatey
+     Software installation - Windows
     </a>
    </li>
   </ul>
@@ -351,42 +351,42 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accessing-the-command-line">
    Accessing the command line
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#basic-commands">
    Basic commands
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#miscellaneous-notes">
    Miscellaneous notes
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#current-directory">
      Current directory
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#file-paths">
      File paths
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#wildcards">
      Wildcards
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#path">
      PATH
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scripting">
      Scripting
     </a>
@@ -402,7 +402,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Accessing the command line</h1>
+                <h1>Command Line</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -412,42 +412,42 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accessing-the-command-line">
    Accessing the command line
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#basic-commands">
    Basic commands
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#miscellaneous-notes">
    Miscellaneous notes
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#current-directory">
      Current directory
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#file-paths">
      File paths
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#wildcards">
      Wildcards
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#path">
      PATH
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scripting">
      Scripting
     </a>
@@ -464,7 +464,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <p>Using the command line lets you harness the full power of your computer.  This
+  <section class="tex2jax_ignore mathjax_ignore" id="command-line">
+<h1>Command Line<a class="headerlink" href="#command-line" title="Permalink to this headline">#</a></h1>
+<p>Using the command line lets you harness the full power of your computer.  This
 page contains an outline of concepts that you should become familiar with.
 However, it is not a comprehensive description of any of them, and you should
 look up any concept that you are unsure about.</p>
@@ -476,7 +478,7 @@ just a little practice, you will become much faster at using the command line
 than you are at clicking buttons.  You will also be able to do things
 that you can’t do through the standard graphical user interface.</p>
 <section id="accessing-the-command-line">
-<h1>Accessing the command line<a class="headerlink" href="#accessing-the-command-line" title="Permalink to this headline">#</a></h1>
+<h2>Accessing the command line<a class="headerlink" href="#accessing-the-command-line" title="Permalink to this headline">#</a></h2>
 <p>In Mac OS, you can access the command line through the Terminal application,
 which provides access to a command line shell called <code class="docutils literal notranslate"><span class="pre">bash</span></code>.  Because Mac OS
 is a descendant of BSD Unix, you can use all the standard Unix commands in
@@ -487,7 +489,7 @@ Command Line.   The <code class="docutils literal notranslate"><span class="pre"
 commands and provide similar functionality to the Unix commands</p>
 </section>
 <section id="basic-commands">
-<h1>Basic commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">#</a></h1>
+<h2>Basic commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">#</a></h2>
 <p>You should familiarize yourself with these commands.  You can find an
 abundance of tutorials online about the command line, as well as reference
 pages for each command.</p>
@@ -539,9 +541,9 @@ pages for each command.</p>
 </table>
 </section>
 <section id="miscellaneous-notes">
-<h1>Miscellaneous notes<a class="headerlink" href="#miscellaneous-notes" title="Permalink to this headline">#</a></h1>
+<h2>Miscellaneous notes<a class="headerlink" href="#miscellaneous-notes" title="Permalink to this headline">#</a></h2>
 <section id="current-directory">
-<h2>Current directory<a class="headerlink" href="#current-directory" title="Permalink to this headline">#</a></h2>
+<h3>Current directory<a class="headerlink" href="#current-directory" title="Permalink to this headline">#</a></h3>
 <p>When working on the command line (in both Unix and Windows) you need to be
 aware of your <em>current directory</em> (sometimes called <em>working
 directory</em>).  When you start up the command line shell, you begin in your
@@ -553,7 +555,7 @@ level back.  On Unix systems, you can refer to your home directory with the
 directory by using <code class="docutils literal notranslate"><span class="pre">cd</span></code> with no additional arguments.</p>
 </section>
 <section id="file-paths">
-<h2>File paths<a class="headerlink" href="#file-paths" title="Permalink to this headline">#</a></h2>
+<h3>File paths<a class="headerlink" href="#file-paths" title="Permalink to this headline">#</a></h3>
 <p>On Unix, directories in file paths are separated by a forward slash
 (<code class="docutils literal notranslate"><span class="pre">/</span></code>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~/</span><span class="n">temp</span><span class="o">/</span><span class="n">hello</span> 
@@ -566,13 +568,13 @@ directory by using <code class="docutils literal notranslate"><span class="pre">
 </div>
 </section>
 <section id="wildcards">
-<h2>Wildcards<a class="headerlink" href="#wildcards" title="Permalink to this headline">#</a></h2>
+<h3>Wildcards<a class="headerlink" href="#wildcards" title="Permalink to this headline">#</a></h3>
 <p>On both Unix and Windows, you can use <code class="docutils literal notranslate"><span class="pre">*</span></code> (star) as a wildcard
 that will match any string, e.g. <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means “all files with
 extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code>”.</p>
 </section>
 <section id="path">
-<h2>PATH<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h2>
+<h3>PATH<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h3>
 <p>Both Unix and Windows use environment variables, and in
 particular an environment variabled called <code class="docutils literal notranslate"><span class="pre">PATH</span></code>, which contains a
 list of directories.   When the user types in a command, the operating
@@ -582,7 +584,7 @@ command line program and want to be able to run it from any directory, you must
 put the executable in a directory that is in the <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p>
 </section>
 <section id="scripting">
-<h2>Scripting<a class="headerlink" href="#scripting" title="Permalink to this headline">#</a></h2>
+<h3>Scripting<a class="headerlink" href="#scripting" title="Permalink to this headline">#</a></h3>
 <p>A <em>script</em> is just another name for a program that
 is run through an interpreter.  Command line scripts are run by the
 command line interpreter.  A script can be as simple as a few commands.
@@ -591,6 +593,7 @@ files) can also use standard programming constructs such as variables,
 conditionals, loops, and functions.  Note however that while these
 programming constructs are available, they are not as easy to use as in a more
 polished programming language like Python or C/C++/Java.</p>
+</section>
 </section>
 </section>
 
@@ -631,7 +634,7 @@ polished programming language like Python or C/C++/Java.</p>
     <a class='right-next' id="next-link" href="installation_mac.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Install Homebrew</p>
+        <p class="prev-next-title">Software installation - Mac</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -1,7 +1,4 @@
----
-title: Software installation - Mac
-layout: page
----
+# Software installation - Mac
 
 ## Install Homebrew
 
