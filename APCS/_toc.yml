@@ -4,5 +4,15 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
+    - file: doc/index
+      sections:
+      - file: doc/class_info
+      - file: doc/resources
+      - file: doc/schedule
+      - file: doc/study_advice
+    - file: setup/index
+      sections:
+      - file: setup/command_line
+      - file: setup/installation_mac
+      - file: setup/installation_windows
+
