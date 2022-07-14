@@ -1,7 +1,9 @@
+
 # Welcome to AP Computer Science!
 
-<script src="p5/p5.min.js"></script>
-<script src="phyllotaxis/phyllotaxis.js"></script>
+<div style="text-align:center;" width="100%">
+<iframe src="phyllotaxis/index.html" height="420px" width="420px"></iframe>
+</div>
 
 We are going to learn how to program in Java, a programming language that has
 been in use by software developers for over 20 years. 

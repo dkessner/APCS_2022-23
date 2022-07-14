@@ -1,0 +1,19 @@
+
+
+:root {
+    --pst-font-family-base: Courier, monospace; /* reset CSS variable */
+}
+
+
+body, 
+.header-article, .headerbtn, 
+#site-navigation, #search-input, #bd-toc-nav
+{
+    background-color: #f5f2e8; /* newspaper off-white */
+}
+
+
+iframe {
+    border: none;
+}
+
