@@ -12,9 +12,8 @@ Niels Bohr, a physicist, gave a definition of an expert:
 > An expert is a man who has made all the mistakes which can be made, in a
 > narrow field.
 
-Of course, we need to update the quote to correct both his gender presumption
-and his belief that someone can make _all_ the mistakes there are to make.  So
-here is my version:
+Of course, we can do better - not every person is a man, and 
+no person can make _all_ the mistakes there are to make:
 
 > An expert is someone who has made more mistakes in a particular subject than
 > anyone else.
@@ -51,9 +50,9 @@ around, poking and prodding and changing things and observing the results.
   must immerse yourself if possible.  A little practice every day will give you
   better results than a long practice one day a week.
 
-- You must make mistakes (and you must learn from them).  Remember: in order to
-  become an expert, you must make all the mistakes that everyone else has made,
-  and more.
+- Give yourself space to make mistakes (and time to learn from them).
+  Remember: in order to become an expert, you must make all the mistakes that
+  everyone else has made, and more.
 
 
 ## Weekly schedule

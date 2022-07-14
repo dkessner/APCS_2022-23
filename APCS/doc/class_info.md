@@ -1,8 +1,9 @@
 # Class Info
 
 __AP Computer Science A (APCS)__  
-__2020-21__  
+__2022-23__  
 __Dr. Kessner__  
+__Marlborough School, Los Angeles__  
 
 ## Topics
 
