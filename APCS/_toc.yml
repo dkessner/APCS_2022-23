@@ -15,4 +15,4 @@ chapters:
       - file: setup/command_line
       - file: setup/installation_mac
       - file: setup/installation_windows
-
+    - file: about
