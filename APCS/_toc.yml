@@ -4,6 +4,7 @@
 format: jb-book
 root: welcome
 chapters:
+    - file: summer_assignment/summer_assignment
     - file: doc/intro
       sections:
       - file: doc/class_info
