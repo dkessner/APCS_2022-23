@@ -1,5 +1,10 @@
 # Software installation - Windows
 
+__2022-23 students: I haven't verified these instructions this year yet.
+If you do this setup, please report back to me (either that it worked,
+or what the problem is).  Thank you!__
+
+
 ## Install Chocolatey
 
 Chocolatey is a package manager for Windows, similar to Homebrew on Mac.
