@@ -34,7 +34,7 @@ as you like.  However, in order to retake a quiz, you must first write up the
 code from your original quiz, make sure it runs correctly, and show me.
 
 You will also have at least one larger coding project, which you will present
-at STEM + Arts Galleries and/or the SPARC Celebration.
+at STEM + Arts Galleries and/or the Celebration of Innovation.
 
 Your grade will be determined by your assignments, quizzes, and project(s)
 (in roughly equal proportions).
