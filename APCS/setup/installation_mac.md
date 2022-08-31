@@ -19,15 +19,14 @@ You can install everything else with Homebrew, from the command line.
 ## Install Java
 
 Install the Java Development Kit (JDK) from the Eclipse Foundation
-(latest version, 16)
 ([info](https://formulae.brew.sh/cask/temurin)). 
 
 ```
 brew install --cask temurin
 ```
 
-Check that everything is installed properly: each of these commands should
-report version 16.x.
+Check that everything is installed properly.  These commands will
+report the Java version.
 
 ```
 javac -version

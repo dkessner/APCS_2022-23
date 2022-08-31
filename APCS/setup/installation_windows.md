@@ -20,8 +20,9 @@ install:
 choco install openjdk
 ```
 
-Check that everything is installed properly: each of these commands should
-report version 16.x.
+Check that everything is installed properly.  These commands will report the
+Java version.
+
 
 ```
 java -version
