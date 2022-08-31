@@ -40,7 +40,7 @@ java -version
 editor, feel free to use that instead.
 
 ```
-brew cask install atom
+brew install --cask atom
 ```
 
 
