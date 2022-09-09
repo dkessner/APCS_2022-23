@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="About" href="../about.html" />
+    <link rel="next" title="Unit 0 Assignment" href="Unit0_Assignment.html" />
     <link rel="prev" title="Software installation - Windows" href="../setup/installation_windows.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -180,10 +180,22 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Unit 0: Numeric Conversion
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Unit0_Assignment.html">
+     Unit 0 Assignment
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../about.html">
@@ -345,12 +357,46 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hello">
+   Hello
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#counting-in-binary">
+   Counting in binary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#command-line">
+   Command line
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -362,6 +408,29 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hello">
+   Hello
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#counting-in-binary">
+   Counting in binary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#command-line">
+   Command line
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -371,7 +440,56 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="unit-0-numeric-conversion">
 <h1>Unit 0: Numeric Conversion<a class="headerlink" href="#unit-0-numeric-conversion" title="Permalink to this headline">#</a></h1>
+<section id="hello">
+<h2>Hello<a class="headerlink" href="#hello" title="Permalink to this headline">#</a></h2>
+<p><a href="../hello/hello.py">hello.py</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Run the program in your terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python hello.py
+<span class="go">Hello, world!</span>
+</pre></div>
+</div>
+<p><a href="../hello/Hello.java">Hello.java</a></p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Hello</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello, world!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>javac Hello.java      <span class="c1"># compile</span>
+<span class="gp">$ </span>java Hello            <span class="c1"># run</span>
+<span class="go">Hello, world!</span>
+</pre></div>
+</div>
+</section>
+<section id="counting-in-binary">
+<h2>Counting in binary<a class="headerlink" href="#counting-in-binary" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>binary</p></li>
+<li><p>hexadecimal</p></li>
+<li><p>octal</p></li>
+</ul>
 <p><img alt="" src="../_images/0.png" /></p>
+</section>
+<section id="command-line">
+<h2>Command line<a class="headerlink" href="#command-line" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>navigating directories</p></li>
+<li><p>creating directories</p></li>
+<li><p>creating / editing files</p></li>
+<li><p>copying / moving files and directories</p></li>
+<li><p>running Python programs</p></li>
+<li><p>compiling and running Java programs</p></li>
+</ul>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -408,10 +526,10 @@ title="Print to PDF"
             <p class="prev-next-title">Software installation - Windows</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../about.html" title="next page">
+    <a class='right-next' id="next-link" href="Unit0_Assignment.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">About</p>
+        <p class="prev-next-title">Unit 0 Assignment</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

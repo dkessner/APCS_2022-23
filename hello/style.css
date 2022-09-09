@@ -1,0 +1,22 @@
+
+h2 {
+/*    color: red;    */
+
+    color: #ff0000;
+    font-size: 2em;
+}
+
+
+p {
+    background-color: #eee;
+}
+
+
+p.special {
+    font-size: 1.2em;
+    color: #00f;
+
+}
+
+
+
