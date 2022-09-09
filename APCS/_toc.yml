@@ -17,4 +17,6 @@ chapters:
       - file: setup/installation_mac
       - file: setup/installation_windows
     - file: unit0/index
+      sections:
+      - file: unit0/Unit0_Assignment
     - file: about
