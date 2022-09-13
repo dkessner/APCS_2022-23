@@ -43,6 +43,7 @@ Hello, world!
 
 
 ![](0.png)
+![](1.png)
 
 ## Command line
 
