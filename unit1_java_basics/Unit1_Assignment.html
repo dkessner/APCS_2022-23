@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Unit 1 - Java basics &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
+    <title>Unit 1 Assignment &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,11 +51,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unit 1 Assignment" href="Unit1_Assignment.html" />
-    <link rel="prev" title="Unit 0 Assignment" href="../unit0/Unit0_Assignment.html" />
+    <link rel="next" title="Unit 2 - Functions and Testing" href="../unit2_functions_testing/index.html" />
+    <link rel="prev" title="Unit 1 - Java basics" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -181,7 +183,7 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../unit0/index.html">
+  <a class="reference internal" href="../unit0_numeric_conversion/index.html">
    Unit 0: Numeric Conversion
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -191,14 +193,14 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../unit0/Unit0_Assignment.html">
+    <a class="reference internal" href="../unit0_numeric_conversion/Unit0_Assignment.html">
      Unit 0 Assignment
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="index.html">
    Unit 1 - Java basics
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -206,9 +208,9 @@ const thebe_selector_output = ".output, .cell_output"
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Unit1_Assignment.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Unit 1 Assignment
     </a>
    </li>
@@ -326,7 +328,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit1/index.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit1_java_basics/Unit1_Assignment.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -354,7 +356,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/unit1/index.md"
+        <a href="../_sources/unit1_java_basics/Unit1_Assignment.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -391,23 +393,124 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading">
+   Reading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiples-of-3">
+     1. Multiples of 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fizzbuzz">
+     2. FizzBuzz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geometric-sequence">
+     3. Geometric sequence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cubes">
+     4. Cubes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fibonacci-sequence">
+     5. Fibonacci sequence
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Unit 1 - Java basics</h1>
+                <h1>Unit 1 Assignment</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading">
+   Reading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiples-of-3">
+     1. Multiples of 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fizzbuzz">
+     2. FizzBuzz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geometric-sequence">
+     3. Geometric sequence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cubes">
+     4. Cubes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fibonacci-sequence">
+     5. Fibonacci sequence
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -415,26 +518,105 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-1-java-basics">
-<h1>Unit 1 - Java basics<a class="headerlink" href="#unit-1-java-basics" title="Permalink to this headline">#</a></h1>
-<p>Topics:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-1-assignment">
+<h1>Unit 1 Assignment<a class="headerlink" href="#unit-1-assignment" title="Permalink to this headline">#</a></h1>
+<section id="reading">
+<h2>Reading<a class="headerlink" href="#reading" title="Permalink to this headline">#</a></h2>
+<p>You will not be quizzed on the readings.  The Unit 1 quiz next week (and
+every quiz from now on) will be based on the code exercises in the
+assignment.</p>
+<p>On a first reading, you do not need to remember all the details.  You just
+need to know how to look up the details when you need them.  As we progress,
+I will assume that you have read the assigned chapters, so you may need to go
+back to these readings to refresh your memory.  As you write more code, you
+will start to internalize the details and you won’t have to look up so many
+things.</p>
 <ul class="simple">
-<li><p>data types and variables</p></li>
-<li><p>math operations</p></li>
-<li><p>conditionals and loops</p></li>
-<li><p>printing sequences</p>
-<ul>
-<li><p>assignment: sequences, FizzBuzz, Fibonacci</p></li>
+<li><p>Eck Section 2.1 (The Basic Java Application)
+<a class="reference external" href="http://math.hws.edu/javanotes/c2/s1.html">http://math.hws.edu/javanotes/c2/s1.html</a></p></li>
+<li><p>Eck Section 2.2 (Variables and the Primitive Types)
+<a class="reference external" href="http://math.hws.edu/javanotes/c2/s2.html">http://math.hws.edu/javanotes/c2/s2.html</a></p></li>
+<li><p>Optional background reading: Eck Chapter 1 (Overview: The Mental Landscape)
+<a class="reference external" href="http://math.hws.edu/javanotes/c1/index.html">http://math.hws.edu/javanotes/c1/index.html</a></p></li>
+<li><p>Supplemental reference: Wikibooks Java Programming
+<a class="reference external" href="https://en.wikibooks.org/wiki/Java_Programming">https://en.wikibooks.org/wiki/Java_Programming</a></p></li>
 </ul>
-</li>
-</ul>
-<p>Demo programs:</p>
-<ul class="simple">
-<li><p><a href="../unit1_demo/HelloJava.java">HelloJava.java</a></p></li>
-<li><p><a href="../unit1_demo/Sequence.java">Sequence.java</a></p></li>
-</ul>
-<div class="toctree-wrapper compound">
+</section>
+<section id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">#</a></h2>
+<p>Use the demo code to do these exercises.  The Unit 1 quiz will consist of
+similar exercises that you will write out by hand.  On the quiz you will need
+to write the body of a given <code class="docutils literal notranslate"><span class="pre">main</span></code> function (i.e. the code between the braces
+<code class="docutils literal notranslate"><span class="pre">{}</span></code>).  At this point, you do <em>not</em> need to be able to write the declaration of
+the class (<code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">class</span> <span class="pre">Blah</span></code>) or the declaration of the <code class="docutils literal notranslate"><span class="pre">main</span></code> function
+(<code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">static</span> <span class="pre">void</span> <span class="pre">main(String[]</span> <span class="pre">args)</span></code>), but you will in the future.</p>
+<p><strong>Important</strong>:   Don’t let yourself get stuck!  If you get frustrated, step
+away from the keyboard.  Then try again when you’re fresh, or ask a classmate
+for help, or ask me.  I’m here to help you!</p>
+<p>If you struggle on an exercise, do it again the next day, and again until you
+can do the exercise without hesitation.  Have you allocated time in your
+schedule to write some code every day?</p>
+<section id="multiples-of-3">
+<h3>1. Multiples of 3<a class="headerlink" href="#multiples-of-3" title="Permalink to this headline">#</a></h3>
+<p>Write a program that prints the first 10 multiples of 3.  You should write a
+class <code class="docutils literal notranslate"><span class="pre">MultiplesOf3</span></code> in a file <code class="docutils literal notranslate"><span class="pre">MultiplesOf3.java</span></code></p>
+</section>
+<section id="fizzbuzz">
+<h3>2. FizzBuzz<a class="headerlink" href="#fizzbuzz" title="Permalink to this headline">#</a></h3>
+<p>Write a FizzBuzz program.  Your class should be named <code class="docutils literal notranslate"><span class="pre">FizzBuzz</span></code> and your
+source file should be named <code class="docutils literal notranslate"><span class="pre">FizzBuzz.java</span></code>.</p>
+<p>Your program should iterate through the first 30 positive integers, printing
+each one.  However, if the integer <span class="math notranslate nohighlight">\(n\)</span> is a multiple of 3, print <code class="docutils literal notranslate"><span class="pre">Fizz</span></code> instead
+of the number.  And if <span class="math notranslate nohighlight">\(n\)</span> is a multiple of 5, print <code class="docutils literal notranslate"><span class="pre">Buzz</span></code> instead.  And if
+<span class="math notranslate nohighlight">\(n\)</span> is a multiple of both 3 and 5, print <code class="docutils literal notranslate"><span class="pre">FizzBuzz</span></code> instead.</p>
+<p>Sample output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<span class="mi">2</span>
+<span class="n">Fizz</span>
+<span class="mi">4</span>
+<span class="n">Buzz</span>
+<span class="n">Fizz</span>
+<span class="mi">7</span>
+<span class="mi">8</span>
+<span class="n">Fizz</span>
+<span class="n">Buzz</span>
+<span class="mi">11</span>
+<span class="n">Fizz</span>
+<span class="mi">13</span>
+<span class="mi">14</span>
+<span class="n">FizzBuzz</span>
+<span class="mi">16</span>
+<span class="o">.</span>
+<span class="o">.</span>
+<span class="o">.</span>
+</pre></div>
 </div>
+</section>
+<section id="geometric-sequence">
+<h3>3. Geometric sequence<a class="headerlink" href="#geometric-sequence" title="Permalink to this headline">#</a></h3>
+<p>Write a program <code class="docutils literal notranslate"><span class="pre">Geometric.java</span></code> that prints out the first terms of a geometric
+sequence, i.e. a sequence with a common ratio, for example: 3, 6, 12, 24, 48,
+…</p>
+</section>
+<section id="cubes">
+<h3>4. Cubes<a class="headerlink" href="#cubes" title="Permalink to this headline">#</a></h3>
+<p>Write a program <code class="docutils literal notranslate"><span class="pre">Cubes.java</span></code> that prints out the cubes of the counting numbers:
+0, 1, 8, 27, 64, 125, …</p>
+</section>
+<section id="fibonacci-sequence">
+<h3>5. Fibonacci sequence<a class="headerlink" href="#fibonacci-sequence" title="Permalink to this headline">#</a></h3>
+<p>Write a program <code class="docutils literal notranslate"><span class="pre">Fibonacci.java</span></code> that prints out the first 30 terms of the
+Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, …</p>
+<p><em>Hint</em>: I find it easiest to think about this problem using 3 variables: <span class="math notranslate nohighlight">\(a\)</span>
+and <span class="math notranslate nohighlight">\(b\)</span> slide up the sequence, and we use a temporary variable <span class="math notranslate nohighlight">\(c\)</span> to help do
+this.</p>
+<p><em>Challenge</em>: After you’ve done this exercise, try doing it using only 2
+variables.</p>
+<p><em>Challenge</em>: Try printing out the ratios of successive terms of the Fibonacci
+sequence.  The sequence of ratios approaches a limit - do you recognize what
+this limit is?</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -450,7 +632,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./unit1"
+            path: "./unit1_java_basics"
         },
         predefinedOutput: true
     }
@@ -464,17 +646,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../unit0/Unit0_Assignment.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Unit 0 Assignment</p>
+            <p class="prev-next-title">Unit 1 - Java basics</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Unit1_Assignment.html" title="next page">
+    <a class='right-next' id="next-link" href="../unit2_functions_testing/index.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unit 1 Assignment</p>
+        <p class="prev-next-title">Unit 2 - Functions and Testing</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
