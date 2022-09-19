@@ -16,12 +16,12 @@ chapters:
       - file: setup/command_line
       - file: setup/installation_mac
       - file: setup/installation_windows
-    - file: unit0/index
+    - file: unit0_numeric_conversion/index
       sections:
-      - file: unit0/Unit0_Assignment
-    - file: unit1/index
+      - file: unit0_numeric_conversion/Unit0_Assignment
+    - file: unit1_java_basics/index
       sections:
-      - file: unit1/Unit1_Assignment
+      - file: unit1_java_basics/Unit1_Assignment
     - file: unit2_functions_testing/index
       sections:
       - file: unit2_functions_testing/Unit2_Assignment
