@@ -16,6 +16,14 @@ Topics:
 
 - unit testing
 
+
+Demo files:
+
+- <a href="../unit2_demo/HelloFunctions.java">HelloFunctions.java</a>
+- <a href="../unit2_demo/ParrotTrouble.java">ParrotTrouble.java</a>
+
+
+
 [http://codingbat.com/java/Warmup-1](http://codingbat.com/java/Warmup-1)
 
 
