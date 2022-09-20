@@ -4,13 +4,13 @@
 format: jb-book
 root: welcome
 chapters:
-    - file: summer_assignment/summer_assignment
+    - file: doc/schedule
     - file: doc/intro
       sections:
+      - file: summer_assignment/summer_assignment
       - file: doc/class_info
       - file: doc/resources
       - file: doc/study_advice
-      - file: doc/schedule
     - file: setup/index
       sections:
       - file: setup/command_line
