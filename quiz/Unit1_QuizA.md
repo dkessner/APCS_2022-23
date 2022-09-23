@@ -42,7 +42,7 @@ public class FizzFizz
 
 
 Write code to print out the first 30 terms of this geometric sequence:
-5, 15, 45, 105, ...
+5, 15, 45, 135, ...
 
 
 ```
