@@ -25,4 +25,7 @@ chapters:
     - file: unit2_functions_testing/index
       sections:
       - file: unit2_functions_testing/Unit2_Assignment
+    - file: unit3_string_math/index
+      sections:
+      - file: unit3_string_math/Unit3_Assignment
     - file: about
