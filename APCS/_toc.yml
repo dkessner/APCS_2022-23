@@ -28,4 +28,7 @@ chapters:
     - file: unit3_string_math/index
       sections:
       - file: unit3_string_math/Unit3_Assignment
+    - file: unit4_loops/index
+      sections:
+      - file: unit4_loops/Unit4_Assignment
     - file: about
