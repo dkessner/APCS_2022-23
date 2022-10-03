@@ -23,4 +23,8 @@ int sum(int n) {}
 String binimate(String s) {}
 ```
 
+## Demo files
+
+- <a href="../unit4_demo/HelloLoops.java">HelloLoops.java</a>
+- <a href="../unit4_demo/HelloAlgorithms.java">HelloAlgorithms.java</a>
 
