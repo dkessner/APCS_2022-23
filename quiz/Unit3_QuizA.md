@@ -14,14 +14,14 @@ Note: Be sure to write a complete function declaration for each of these.
 ### 1. Insult
 
 Write a function that takes a String `name` and insults the person with that
-name.  Unless the name is "Dr. Sands" or "Mrs. Hotchkiss", in which case you
+name.  Unless the name is "Dr. Mirsky" or "Mr. Witman", in which case you
 return a compliment.
 
 ```
 insult("Dr. Kessner") -> "Dr. Kessner wears funny clothes!"
 insult("Mr. President") -> "Mr. President wears funny clothes!"
-insult("Dr. Sands") -> "Dr. Sands is awesome!"
-insult("Mrs. Hotchkiss") -> "Mrs. Hotchkiss is awesome!"
+insult("Dr. Mirsky") -> "Dr. Mirsky is awesome!"
+insult("Mr. Witman") -> "Mr. Witman is awesome!"
 ```
 
 \vspace{2.5in}
@@ -38,7 +38,7 @@ hotOrCold(70) -> "Ok"
 hotOrCold(50) -> "Cold"
 ```
 
-\vspace{2.5in}
+\newpage
 
 
 ### 3. OddHeadEvenTail
