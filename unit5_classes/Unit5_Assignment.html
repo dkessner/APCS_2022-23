@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Unit 2 - Functions and Testing &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
+    <title>Unit 5 Assignment &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,11 +51,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unit 2 Assignment" href="Unit2_Assignment.html" />
-    <link rel="prev" title="Unit 1 Assignment" href="../unit1_java_basics/Unit1_Assignment.html" />
+    <link rel="next" title="About" href="../about.html" />
+    <link rel="prev" title="Unit 5 - Classes and objects" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -214,18 +216,18 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../unit2_functions_testing/index.html">
    Unit 2 - Functions and Testing
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="Unit2_Assignment.html">
+    <a class="reference internal" href="../unit2_functions_testing/Unit2_Assignment.html">
      Unit 2 Assignment
     </a>
    </li>
@@ -265,18 +267,18 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../unit5_classes/index.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
    Unit 5 - Classes and objects
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
   <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../unit5_classes/Unit5_Assignment.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Unit 5 Assignment
     </a>
    </li>
@@ -377,7 +379,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit2_functions_testing/index.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit5_classes/Unit5_Assignment.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -405,7 +407,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/unit2_functions_testing/index.md"
+        <a href="../_sources/unit5_classes/Unit5_Assignment.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -442,23 +444,124 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading">
+   Reading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#person">
+     Person
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scorekeeper">
+     ScoreKeeper
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#magic-eight-ball">
+     Magic Eight Ball
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rectangle">
+     Rectangle
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bonus-challenge-vector">
+     Bonus Challenge:  Vector
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Unit 2 - Functions and Testing</h1>
+                <h1>Unit 5 Assignment</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading">
+   Reading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#person">
+     Person
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scorekeeper">
+     ScoreKeeper
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#magic-eight-ball">
+     Magic Eight Ball
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rectangle">
+     Rectangle
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bonus-challenge-vector">
+     Bonus Challenge:  Vector
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -466,31 +569,102 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-2-functions-and-testing">
-<h1>Unit 2 - Functions and Testing<a class="headerlink" href="#unit-2-functions-and-testing" title="Permalink to this headline">#</a></h1>
-<p>Topics:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-5-assignment">
+<h1>Unit 5 Assignment<a class="headerlink" href="#unit-5-assignment" title="Permalink to this headline">#</a></h1>
+<section id="reading">
+<h2>Reading<a class="headerlink" href="#reading" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>(static) functions: arguments, return types</p></li>
-<li><p>conditions and logical operators</p>
-<ul>
-<li><p>relational operators <code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, etc.</p></li>
-<li><p>logical operators: <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">||</span></code>, <code class="docutils literal notranslate"><span class="pre">!</span></code></p></li>
+<li><p>Eck Sections 5.1-3 (Objects and Classes)
+<a class="reference external" href="http://math.hws.edu/javanotes/c5/index.html">http://math.hws.edu/javanotes/c5/index.html</a></p></li>
+<li><p>Wikibooks Java
+<a class="reference external" href="https://en.wikibooks.org/wiki/Java_Programming/Defining_Classes">https://en.wikibooks.org/wiki/Java_Programming/Defining_Classes</a></p></li>
 </ul>
-</li>
-<li><p>truth tables: and, or, not</p></li>
-<li><p>logic and set theory</p></li>
-<li><p>De Morgan’s Laws</p></li>
-<li><p>unit testing</p></li>
-</ul>
-<p><img alt="" src="../_images/01.png" /></p>
-<p>Demo files:</p>
+</section>
+<section id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">#</a></h2>
+<section id="person">
+<h3>Person<a class="headerlink" href="#person" title="Permalink to this headline">#</a></h3>
+<p>Write a <code class="docutils literal notranslate"><span class="pre">Person</span></code> class that includes the following:</p>
 <ul class="simple">
-<li><p><a href="../unit2_demo/HelloFunctions.java">HelloFunctions.java</a></p></li>
-<li><p><a href="../unit2_demo/ParrotTrouble.java">ParrotTrouble.java</a></p></li>
+<li><p>private member variables for name (String) and number of pets (int)</p></li>
+<li><p>public constructor taking name and number of pets as input</p></li>
+<li><p>public accessor functions for name and number of pets</p></li>
+<li><p>public member function <code class="docutils literal notranslate"><span class="pre">greeting</span></code> that returns a String:
+“Hello, my name is (name) and I have (numberOfPets) pets.”</p></li>
 </ul>
-<p><a class="reference external" href="http://codingbat.com/java/Warmup-1">http://codingbat.com/java/Warmup-1</a></p>
-<div class="toctree-wrapper compound">
-</div>
+<p>Also write a <code class="docutils literal notranslate"><span class="pre">TestPerson</span></code> class that instantiates some <code class="docutils literal notranslate"><span class="pre">Person</span></code> objects and
+demonstrates that the functions are working properly.</p>
+</section>
+<section id="scorekeeper">
+<h3>ScoreKeeper<a class="headerlink" href="#scorekeeper" title="Permalink to this headline">#</a></h3>
+<p>Write a <code class="docutils literal notranslate"><span class="pre">ScoreKeeper</span></code> class that includes the following:</p>
+<ul class="simple">
+<li><p>private member variable to keep track of the score (initialized to 0)</p></li>
+<li><p>public accessor function for the score</p></li>
+<li><p>public method <code class="docutils literal notranslate"><span class="pre">scoreNormal()</span></code> that adds 100 to the score</p></li>
+<li><p>public method <code class="docutils literal notranslate"><span class="pre">scoreBonus()</span></code> that adds 1000 to the score</p></li>
+</ul>
+<p>Write a <code class="docutils literal notranslate"><span class="pre">TestScoreKeeper</span></code> class that instantiates a <code class="docutils literal notranslate"><span class="pre">ScoreKeeper</span></code> object and
+tests its functions.</p>
+</section>
+<section id="magic-eight-ball">
+<h3>Magic Eight Ball<a class="headerlink" href="#magic-eight-ball" title="Permalink to this headline">#</a></h3>
+<p>Write a <code class="docutils literal notranslate"><span class="pre">MagicEightBall</span></code> class that includes the following:</p>
+<ul class="simple">
+<li><p>private final String member variables to hold the possible replies (if you
+don’t remember what <code class="docutils literal notranslate"><span class="pre">final</span></code> means, look it up again)</p></li>
+<li><p>public member function <code class="docutils literal notranslate"><span class="pre">ask()</span></code> that takes a single string as input, ignores it, and
+returns a string randomly from the possible replies</p></li>
+</ul>
+<p>Write a <code class="docutils literal notranslate"><span class="pre">TestMagicEightBall</span></code> class that instantiates a <code class="docutils literal notranslate"><span class="pre">MagicEightBall</span></code> object
+and asks it some important questions.</p>
+</section>
+<section id="rectangle">
+<h3>Rectangle<a class="headerlink" href="#rectangle" title="Permalink to this headline">#</a></h3>
+<p>Write a <code class="docutils literal notranslate"><span class="pre">Rectangle</span></code> class that includes the following:</p>
+<ul class="simple">
+<li><p>private double member variables for base and height</p></li>
+<li><p>public constructor with base and height as inputs</p></li>
+<li><p>public accessor functions for base and height</p></li>
+<li><p>public member function to return the area of the rectangle</p></li>
+<li><p>public member function to return the perimeter of the rectangle</p></li>
+<li><p>public member function to return the length of a diagonal of the rectangle</p></li>
+</ul>
+<p>Be sure to include a test class to demonstrate that your Rectangle class
+functions all work properly.</p>
+</section>
+<section id="bonus-challenge-vector">
+<h3>Bonus Challenge:  Vector<a class="headerlink" href="#bonus-challenge-vector" title="Permalink to this headline">#</a></h3>
+<p>Write a <code class="docutils literal notranslate"><span class="pre">Vector</span></code> class that represents a two-dimensional vector <span class="math notranslate nohighlight">\(\vec{v} = \left&lt;x, y\right&gt;\)</span>.
+Include the following:</p>
+<ul class="simple">
+<li><p>private double member variables for <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span></p></li>
+<li><p>public constructor taking <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> as input</p></li>
+<li><p>public accessor functions for <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span></p></li>
+<li><p>public member function that returns the magnitude of the vector</p></li>
+<li><p>public member function that returns the direction of the vector (Note: this
+is a little tricky in general because you need to use atan() and check the
+quadrant.  Fortunately, the Java <code class="docutils literal notranslate"><span class="pre">Math</span></code> class includes a convenient function
+<code class="docutils literal notranslate"><span class="pre">atan2(y,</span> <span class="pre">x)</span></code> that does this check for you.  Note that <code class="docutils literal notranslate"><span class="pre">y</span></code> comes before <code class="docutils literal notranslate"><span class="pre">x</span></code>.)</p></li>
+<li><p>public member function that adds another vector to this one (like <code class="docutils literal notranslate"><span class="pre">+=</span></code>):
+<code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">void</span> <span class="pre">add(Vector</span> <span class="pre">u)</span></code></p></li>
+<li><p>public member function that multiplies this vector by a scalar (like <code class="docutils literal notranslate"><span class="pre">*=</span></code>):
+<code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">void</span> <span class="pre">scalarMultiply(double</span> <span class="pre">k)</span></code></p></li>
+<li><p>public member function that computes and returns the dot product of this vector with
+another vector: <code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">double</span> <span class="pre">dotProduct(Vector</span> <span class="pre">u)</span></code></p></li>
+<li><p>public member function that calculates the angle between this and another vector:
+<code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">double</span> <span class="pre">angle(Vector</span> <span class="pre">u)</span></code>
+Hint: Use what you know from pre-calculus, together with <code class="docutils literal notranslate"><span class="pre">Math.acos()</span></code> and the
+<code class="docutils literal notranslate"><span class="pre">dotProduct</span></code> and <code class="docutils literal notranslate"><span class="pre">magnitude</span></code> functions above.</p></li>
+</ul>
+<p>And yes, you guessed it, make sure to write a test class to verify that your
+functions are all doing what they’re supposed to be doing.</p>
+<p>Note: The Unit 5 Quiz will consist of writing a class (but shorter than these
+exercises, and no test class).  You will be responsible for writing the full
+class declaration, including proper declaration of member variables and methods
+(including constructors).</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -506,7 +680,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./unit2_functions_testing"
+            path: "./unit5_classes"
         },
         predefinedOutput: true
     }
@@ -520,17 +694,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../unit1_java_basics/Unit1_Assignment.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Unit 1 Assignment</p>
+            <p class="prev-next-title">Unit 5 - Classes and objects</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Unit2_Assignment.html" title="next page">
+    <a class='right-next' id="next-link" href="../about.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unit 2 Assignment</p>
+        <p class="prev-next-title">About</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
