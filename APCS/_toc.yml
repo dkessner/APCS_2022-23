@@ -31,4 +31,7 @@ chapters:
     - file: unit4_loops/index
       sections:
       - file: unit4_loops/Unit4_Assignment
+    - file: unit5_classes/index
+      sections:
+      - file: unit5_classes/Unit5_Assignment
     - file: about
