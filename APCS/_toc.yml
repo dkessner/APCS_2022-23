@@ -34,4 +34,7 @@ chapters:
     - file: unit5_classes/index
       sections:
       - file: unit5_classes/Unit5_Assignment
+    - file: unit6_processing_libraries/index
+      sections:
+      - file: unit6_processing_libraries/Unit6_Assignment
     - file: about
