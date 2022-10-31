@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Unit 6 Assignment &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
+    <title>Unit 7 Assignment &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unit 7 - Arrays" href="../unit7_arrays/index.html" />
-    <link rel="prev" title="Unit 6 - Processing libraries" href="index.html" />
+    <link rel="next" title="About" href="../about.html" />
+    <link rel="prev" title="Unit 7 - Arrays" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -282,35 +282,35 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="index.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../unit6_processing_libraries/index.html">
    Unit 6 - Processing libraries
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
   <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../unit6_processing_libraries/Unit6_Assignment.html">
+     Unit 6 Assignment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Unit 7 - Arrays
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Unit 6 Assignment
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../unit7_arrays/index.html">
-   Unit 7 - Arrays
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-  <label for="toctree-checkbox-10">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../unit7_arrays/Unit7_Assignment.html">
      Unit 7 Assignment
     </a>
    </li>
@@ -411,7 +411,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit6_processing_libraries/Unit6_Assignment.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit7_arrays/Unit7_Assignment.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -439,7 +439,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/unit6_processing_libraries/Unit6_Assignment.md"
+        <a href="../_sources/unit7_arrays/Unit7_Assignment.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -499,9 +499,36 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading">
+   Reading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#codingbat-practice">
+   Codingbat practice
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#code">
    Code
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#count-lucky">
+     Count lucky
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sum-of-squares-array">
+     Sum of squares (array)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#total-z-name-length">
+     Total Z name length
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#project">
@@ -517,7 +544,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Unit 6 Assignment</h1>
+                <h1>Unit 7 Assignment</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -528,9 +555,36 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading">
+   Reading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#codingbat-practice">
+   Codingbat practice
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#code">
    Code
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#count-lucky">
+     Count lucky
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sum-of-squares-array">
+     Sum of squares (array)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#total-z-name-length">
+     Total Z name length
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#project">
@@ -547,19 +601,73 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-6-assignment">
-<h1>Unit 6 Assignment<a class="headerlink" href="#unit-6-assignment" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-7-assignment">
+<h1>Unit 7 Assignment<a class="headerlink" href="#unit-7-assignment" title="Permalink to this headline">#</a></h1>
+<section id="reading">
+<h2>Reading<a class="headerlink" href="#reading" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Eck Section 7.1 (Arrays)
+<a class="reference external" href="http://math.hws.edu/javanotes/c7/s1.html">http://math.hws.edu/javanotes/c7/s1.html</a></p></li>
+<li><p>Wikibooks Java - Arrays
+<a class="reference external" href="https://en.wikibooks.org/wiki/Java_Programming/Arrays">https://en.wikibooks.org/wiki/Java_Programming/Arrays</a></p></li>
+</ul>
+</section>
+<section id="codingbat-practice">
+<h2>Codingbat practice<a class="headerlink" href="#codingbat-practice" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://codingbat.com/java/Warmup-2">CodingBat Warmup 2</a></p>
+<ul class="simple">
+<li><p>arrayCount9</p></li>
+<li><p>arrayFront9</p></li>
+<li><p>array667</p></li>
+</ul>
+</section>
 <section id="code">
 <h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">#</a></h2>
-<p>Write a program that animates something on screen.  Your program must
-use an external class, with a <code class="docutils literal notranslate"><span class="pre">private</span> <span class="pre">PApplet</span></code> member variable that is
-set via the constructor, and a <code class="docutils literal notranslate"><span class="pre">display()</span></code> function to draw the object.</p>
+<p>Make sure to write full unit tests for these functions.</p>
+<section id="count-lucky">
+<h3>Count lucky<a class="headerlink" href="#count-lucky" title="Permalink to this headline">#</a></h3>
+<p>A number is lucky if it is a multiple of 7 or ends in 7.  Write a function that
+counts the number of lucky numbers in an array of integers.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">countLucky</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">0</span>
+<span class="n">countLucky</span><span class="p">({</span><span class="mi">7</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">2</span>    
+<span class="n">countLucky</span><span class="p">({</span><span class="mi">107</span><span class="p">,</span> <span class="mi">207</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">2</span>    
+</pre></div>
+</div>
+</section>
+<section id="sum-of-squares-array">
+<h3>Sum of squares (array)<a class="headerlink" href="#sum-of-squares-array" title="Permalink to this headline">#</a></h3>
+<p>Write a function that takes a single array of doubles as input, and returns the
+sum of squares of the values.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sumOfSquares</span><span class="p">({</span><span class="mi">0</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">0</span>
+<span class="n">sumOfSquares</span><span class="p">({</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mf">14.0</span>
+<span class="n">sumOfSquares</span><span class="p">({</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mf">12.0</span>
+</pre></div>
+</div>
+</section>
+<section id="total-z-name-length">
+<h3>Total Z name length<a class="headerlink" href="#total-z-name-length" title="Permalink to this headline">#</a></h3>
+<p>Write a function that takes an array of strings as input, and returns
+the total length of the strings that start with “z” or “Z”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">countZNames</span><span class="p">({</span><span class="s2">&quot;Dr. Kessner&quot;</span><span class="p">,</span> <span class="s2">&quot;Dr. Sands&quot;</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">0</span>
+<span class="n">countZNames</span><span class="p">({</span><span class="s2">&quot;Zorro&quot;</span><span class="p">,</span> <span class="s2">&quot;zero&quot;</span><span class="p">,</span> <span class="s2">&quot;zippy&quot;</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">14</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="project">
 <h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
-<p>Decide on a project to start working on.  It can be any interactive
-animation or video game.  You will be writing in Java, using the
+<p>It’s time to start planning and prototyping your coding project!</p>
+<p>Your project can be any interactive animation or video game using the
 Processing libraries.</p>
+<p>Your goals for the week:</p>
+<ul class="simple">
+<li><p><strong>Start your project!</strong>  Make a folder, and get some code running, even if
+it’s just a title screen and a bouncing ball.</p></li>
+<li><p>Make sure you understand how to use the Processing libraries in your program.
+In particular, you will need to understand how to write classes that call the
+Processing functions via a PApplet reference.</p></li>
+<li><p>Play around with some ideas.</p></li>
+</ul>
 </section>
 </section>
 
@@ -576,7 +684,7 @@ Processing libraries.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./unit6_processing_libraries"
+            path: "./unit7_arrays"
         },
         predefinedOutput: true
     }
@@ -594,13 +702,13 @@ Processing libraries.</p>
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Unit 6 - Processing libraries</p>
+            <p class="prev-next-title">Unit 7 - Arrays</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../unit7_arrays/index.html" title="next page">
+    <a class='right-next' id="next-link" href="../about.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unit 7 - Arrays</p>
+        <p class="prev-next-title">About</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
