@@ -37,4 +37,7 @@ chapters:
     - file: unit6_processing_libraries/index
       sections:
       - file: unit6_processing_libraries/Unit6_Assignment
+    - file: unit7_arrays/index
+      sections:
+      - file: unit7_arrays/Unit7_Assignment
     - file: about
