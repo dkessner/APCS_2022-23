@@ -476,12 +476,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#demo-files">
+   Demo files
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -493,6 +517,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#demo-files">
+   Demo files
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -512,13 +549,13 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>for loops</p></li>
 <li><p>for-each loops</p></li>
-<li><p>function examples:</p>
-<ul>
-<li><p>average score</p></li>
-<li><p>count odd names</p></li>
 </ul>
-</li>
+<section id="demo-files">
+<h2>Demo files<a class="headerlink" href="#demo-files" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a href="../unit7_demo/HelloArrays.java">HelloArrays.java</a></p></li>
 </ul>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
