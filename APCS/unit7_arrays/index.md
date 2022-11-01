@@ -11,7 +11,10 @@ Demos:
 
 - for loops
 - for-each loops
-- function examples:
-    - average score
-    - count odd names
+
+
+## Demo files
+
+- <a href="../unit7_demo/HelloArrays.java">HelloArrays.java</a>
+
 
