@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Unit 7 - Arrays &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
+    <title>Unit 8 Assignment &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unit 7 Assignment" href="Unit7_Assignment.html" />
-    <link rel="prev" title="Unit 6 Assignment" href="../unit6_processing_libraries/Unit6_Assignment.html" />
+    <link rel="next" title="About" href="../about.html" />
+    <link rel="prev" title="Unit 8 - ArrayList" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -299,35 +299,35 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../unit7_arrays/index.html">
    Unit 7 - Arrays
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
   <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="Unit7_Assignment.html">
+    <a class="reference internal" href="../unit7_arrays/Unit7_Assignment.html">
      Unit 7 Assignment
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../unit8_arraylist/index.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
    Unit 8 - ArrayList
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
   <label for="toctree-checkbox-11">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../unit8_arraylist/Unit8_Assignment.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Unit 8 Assignment
     </a>
    </li>
@@ -428,7 +428,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit7_arrays/index.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit8_arraylist/Unit8_Assignment.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -456,7 +456,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/unit7_arrays/index.md"
+        <a href="../_sources/unit8_arraylist/Unit8_Assignment.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -516,9 +516,31 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#demo-files">
-   Demo files
+  <a class="reference internal nav-link" href="#reading">
+   Reading
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#count-lucky">
+     Count lucky
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sum-of-squares">
+     Sum of squares
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#total-z-name-length">
+     Total Z name length
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -529,7 +551,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Unit 7 - Arrays</h1>
+                <h1>Unit 8 Assignment</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -540,9 +562,31 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#demo-files">
-   Demo files
+  <a class="reference internal nav-link" href="#reading">
+   Reading
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#count-lucky">
+     Count lucky
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sum-of-squares">
+     Sum of squares
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#total-z-name-length">
+     Total Z name length
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -554,27 +598,49 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-7-arrays">
-<h1>Unit 7 - Arrays<a class="headerlink" href="#unit-7-arrays" title="Permalink to this headline">#</a></h1>
-<p>Topics:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-8-assignment">
+<h1>Unit 8 Assignment<a class="headerlink" href="#unit-8-assignment" title="Permalink to this headline">#</a></h1>
+<section id="reading">
+<h2>Reading<a class="headerlink" href="#reading" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>declaring, initializing, and accessing arrays</p></li>
-<li><p>for loops vs for each loops</p></li>
-<li><p>example loop calculations (counting, sums)</p></li>
-</ul>
-<p>Demos:</p>
-<ul class="simple">
-<li><p>for loops</p></li>
-<li><p>for-each loops</p></li>
-</ul>
-<section id="demo-files">
-<h2>Demo files<a class="headerlink" href="#demo-files" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p><a href="../unit7_demo/HelloArrays.java">HelloArrays.java</a></p></li>
+<li><p>Eck Section 7.3 (ArrayList)
+<a class="reference external" href="http://math.hws.edu/javanotes/c7/s3.html">http://math.hws.edu/javanotes/c7/s3.html</a></p></li>
 </ul>
 </section>
-<div class="toctree-wrapper compound">
+<section id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">#</a></h2>
+<p>Make sure to write full unit tests for these functions.  Write at least one of these
+functions using a standard for loop, and at least one with a for-each loop.</p>
+<section id="count-lucky">
+<h3>Count lucky<a class="headerlink" href="#count-lucky" title="Permalink to this headline">#</a></h3>
+<p>A number is lucky if it is a multiple of 7 or ends in 7.  Write a function that
+counts the number of lucky numbers in an ArrayList of integers.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">countLucky</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">0</span>
+<span class="n">countLucky</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">2</span>    
+<span class="n">countLucky</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">{</span><span class="mi">107</span><span class="p">,</span> <span class="mi">207</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">2</span>    
+</pre></div>
 </div>
+</section>
+<section id="sum-of-squares">
+<h3>Sum of squares<a class="headerlink" href="#sum-of-squares" title="Permalink to this headline">#</a></h3>
+<p>Write a function that takes a single ArrayList of doubles as input, and returns the
+sum of squares of the values.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sumOfSquares</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">{</span><span class="mi">0</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">0</span>
+<span class="n">sumOfSquares</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">{</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mf">14.0</span>
+<span class="n">sumOfSquares</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">{</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mf">12.0</span>
+</pre></div>
+</div>
+</section>
+<section id="total-z-name-length">
+<h3>Total Z name length<a class="headerlink" href="#total-z-name-length" title="Permalink to this headline">#</a></h3>
+<p>Write a function that takes an ArrayList of strings as input, and returns
+the total length of the strings that start with “z” or “Z”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">countZNames</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">{</span><span class="s2">&quot;Dr. Kessner&quot;</span><span class="p">,</span> <span class="s2">&quot;Dr. Sands&quot;</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">0</span>
+<span class="n">countZNames</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">{</span><span class="s2">&quot;Zorro&quot;</span><span class="p">,</span> <span class="s2">&quot;zero&quot;</span><span class="p">,</span> <span class="s2">&quot;zippy&quot;</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="mi">14</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -590,7 +656,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./unit7_arrays"
+            path: "./unit8_arraylist"
         },
         predefinedOutput: true
     }
@@ -604,17 +670,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../unit6_processing_libraries/Unit6_Assignment.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Unit 6 Assignment</p>
+            <p class="prev-next-title">Unit 8 - ArrayList</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Unit7_Assignment.html" title="next page">
+    <a class='right-next' id="next-link" href="../about.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unit 7 Assignment</p>
+        <p class="prev-next-title">About</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
