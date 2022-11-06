@@ -40,4 +40,7 @@ chapters:
     - file: unit7_arrays/index
       sections:
       - file: unit7_arrays/Unit7_Assignment
+    - file: unit8_arraylist/index
+      sections:
+      - file: unit8_arraylist/Unit8_Assignment
     - file: about
