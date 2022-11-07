@@ -5,4 +5,8 @@ Topics:
 - for loops vs for each loops
 - auto-boxing
 
+## Demo files
+
+- <a href="../unit8_demo/HelloArrayList.java">HelloArrayList.java</a>
+
 
