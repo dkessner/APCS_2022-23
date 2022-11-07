@@ -39,6 +39,19 @@ public class HelloArrayList
         for (String name : names)
             System.out.print(name + " ");
         System.out.println();
+        
+        // auto-boxing
+
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        numbers.add(5);
+        numbers.add(7);
+        numbers.add(9);
+
+        System.out.println("numbers: " );
+
+        for (int value : numbers)
+            System.out.println(value);
+
     }
 }
 
