@@ -43,4 +43,7 @@ chapters:
     - file: unit8_arraylist/index
       sections:
       - file: unit8_arraylist/Unit8_Assignment
+    - file: unit9_array_algorithms/index
+      sections:
+      - file: unit9_array_algorithms/Unit9_Assignment
     - file: about
