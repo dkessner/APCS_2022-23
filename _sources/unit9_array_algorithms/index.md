@@ -6,5 +6,8 @@ Topics:
 - transform
 - building sequences
 
+## Demo files
+
+- <a href="../unit9_demo/ArrayAlgorithms.java">ArrayAlgorithms.java</a>
 
 
