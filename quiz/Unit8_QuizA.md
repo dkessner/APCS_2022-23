@@ -43,7 +43,7 @@ a single string made by concatenating every other string in the list.
 ```
 cat(ArrayList({"cat", "dog"})) -> "cat"
 cat(ArrayList({"duck", "goose", "turkey"})) -> "duckturkey"
-cat(ArrayList({"a", "b", "c", "d", "e", "f"})) -> "acf"
+cat(ArrayList({"a", "b", "c", "d", "e", "f"})) -> "ace"
 ```
 
 
