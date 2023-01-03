@@ -46,4 +46,7 @@ chapters:
     - file: unit9_array_algorithms/index
       sections:
       - file: unit9_array_algorithms/Unit9_Assignment
+    - file: unit10_lists_of_objects/index
+      sections:
+      - file: unit10_lists_of_objects/Unit10_Assignment
     - file: about
