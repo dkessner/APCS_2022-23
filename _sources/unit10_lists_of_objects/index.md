@@ -1,6 +1,6 @@
 # Unit 10 - Lists of objects
 
-Topics:
+## Topics
 
 - projects
     - project management
@@ -10,7 +10,7 @@ Topics:
     - calculations on lists of objects
 
 
-Demo: 
+## Demo
 
 - <a href="../unit10_demo/Animal.java">Animal.java</a>
 - <a href="../unit10_demo/AnimalInfo.java">AnimalInfo.java</a>
