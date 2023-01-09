@@ -49,4 +49,7 @@ chapters:
     - file: unit10_lists_of_objects/index
       sections:
       - file: unit10_lists_of_objects/Unit10_Assignment
+    - file: unit11_inheritance_interfaces/index
+      sections:
+      - file: unit11_inheritance_interfaces/Unit11_Assignment
     - file: about
