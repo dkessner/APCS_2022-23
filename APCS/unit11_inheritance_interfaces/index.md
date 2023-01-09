@@ -5,6 +5,8 @@
 - subclasses
 - interfaces
 
+![](0.png)
+
 ## Demo
 
 - <a href="../unit11_demo/Person.java">Person.java</a>
