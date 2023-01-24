@@ -52,4 +52,7 @@ chapters:
     - file: unit11_inheritance_interfaces/index
       sections:
       - file: unit11_inheritance_interfaces/Unit11_Assignment
+    - file: unit12_2d_arrays/index
+      sections:
+      - file: unit12_2d_arrays/Unit12_Assignment
     - file: about
