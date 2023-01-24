@@ -5,6 +5,8 @@
 - 2D arrays
     - initialization and traversal
     - computations
+
+![](0.png)
  
 ## Demo
 
