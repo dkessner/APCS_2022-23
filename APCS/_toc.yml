@@ -55,4 +55,7 @@ chapters:
     - file: unit12_2d_arrays/index
       sections:
       - file: unit12_2d_arrays/Unit12_Assignment
+    - file: unit13_interacting_classes/index
+      sections:
+      - file: unit13_interacting_classes/Unit13_Assignment
     - file: about
