@@ -58,4 +58,7 @@ chapters:
     - file: unit13_interacting_classes/index
       sections:
       - file: unit13_interacting_classes/Unit13_Assignment
+    - file: unit14_algorithms/index
+      sections:
+      - file: unit14_algorithms/Unit14_Assignment
     - file: about
