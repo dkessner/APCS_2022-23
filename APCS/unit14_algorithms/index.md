@@ -17,3 +17,7 @@
     - $o(n^2)$ vs. $o(n \log n)$
 
  
+ ## Notes
+
+ ![](0.png)
+
