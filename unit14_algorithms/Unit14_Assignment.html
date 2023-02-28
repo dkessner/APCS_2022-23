@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Unit 3 - String, Math &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
+    <title>Unit 14 Assignment (optional) &#8212; APCS &lt;br/&gt; AP Computer Science &lt;br/&gt; 2022-23 &lt;br/&gt; Dr. Kessner</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unit 3 Assignment" href="Unit3_Assignment.html" />
-    <link rel="prev" title="Unit 2 Assignment" href="../unit2_functions_testing/Unit2_Assignment.html" />
+    <link rel="next" title="About" href="../about.html" />
+    <link rel="prev" title="Unit 14 - Algorithms" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -231,18 +231,18 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../unit3_string_math/index.html">
    Unit 3 - String, Math
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="Unit3_Assignment.html">
+    <a class="reference internal" href="../unit3_string_math/Unit3_Assignment.html">
      Unit 3 Assignment
     </a>
    </li>
@@ -418,18 +418,18 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../unit14_algorithms/index.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
    Unit 14 - Algorithms
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
   <label for="toctree-checkbox-17">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../unit14_algorithms/Unit14_Assignment.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Unit 14 Assignment (optional)
     </a>
    </li>
@@ -530,7 +530,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit3_string_math/index.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dkessner/APCS/issues/new?title=Issue%20on%20page%20%2Funit14_algorithms/Unit14_Assignment.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -558,7 +558,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/unit3_string_math/index.md"
+        <a href="../_sources/unit14_algorithms/Unit14_Assignment.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -595,23 +595,94 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-exercises">
+   Code exercises
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linear-search">
+     Linear Search
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sorting">
+     Sorting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#binary-search">
+     Binary Search
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Unit 3 - String, Math</h1>
+                <h1>Unit 14 Assignment (optional)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-exercises">
+   Code exercises
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linear-search">
+     Linear Search
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sorting">
+     Sorting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#binary-search">
+     Binary Search
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -619,36 +690,45 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-3-string-math">
-<h1>Unit 3 - String, Math<a class="headerlink" href="#unit-3-string-math" title="Permalink to this headline">#</a></h1>
-<p>Topics:</p>
-<ul class="simple">
-<li><p>class <code class="docutils literal notranslate"><span class="pre">Math</span></code></p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">PI</span></code>, <code class="docutils literal notranslate"><span class="pre">E</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">sin()</span></code>, <code class="docutils literal notranslate"><span class="pre">cos()</span></code>, <code class="docutils literal notranslate"><span class="pre">exp()</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">random()</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">abs()</span></code>, floating point equality comparisons</p></li>
-</ul>
-</li>
-<li><p>class <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
-<ul>
-<li><p>String objects and return values</p></li>
-<li><p>concatenation</p></li>
-<li><p>reference types, comparison, <code class="docutils literal notranslate"><span class="pre">equals()</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">length()</span></code>, <code class="docutils literal notranslate"><span class="pre">substring()</span></code></p></li>
-</ul>
-</li>
-</ul>
-<p><img alt="" src="../_images/0.jpg" /></p>
-<p>Demo files:</p>
-<ul class="simple">
-<li><p><a href="../unit3_demo/HelloString.java">HelloString.java</a></p></li>
-<li><p><a href="../unit3_demo/HelloMath.java">HelloMath.java</a></p></li>
-<li><p><a href="../unit3_demo/HelloRandom.java">HelloRandom.java</a></p></li>
-</ul>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-14-assignment-optional">
+<h1>Unit 14 Assignment (optional)<a class="headerlink" href="#unit-14-assignment-optional" title="Permalink to this headline">#</a></h1>
+<section id="code-exercises">
+<h2>Code exercises<a class="headerlink" href="#code-exercises" title="Permalink to this headline">#</a></h2>
+<p>Here are some optional fun code exercises to practice thinking about
+algorithms.  Choose any that look interesting to you.  Make sure to write unit
+tests to verify that your code is behaving the way you expect it to.</p>
+<section id="linear-search">
+<h3>Linear Search<a class="headerlink" href="#linear-search" title="Permalink to this headline">#</a></h3>
+<p>Implement a linear search function.  Note: You have written similar functions
+before, finding an object with a specified name in a list, for example.  In
+this case you want to return the index into the array, not the object.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">find</span><span class="p">(</span><span class="nb">int</span><span class="p">[]</span> <span class="n">values</span><span class="p">,</span> <span class="nb">int</span> <span class="n">searchValue</span><span class="p">);</span>
+
+<span class="n">find</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">},</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">-</span><span class="mi">1</span>  <span class="o">//</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">searchValue</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">found</span>
+<span class="n">find</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">},</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">0</span>
+<span class="n">find</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">},</span> <span class="mi">3</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">1</span>
+<span class="n">find</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">},</span> <span class="mi">5</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">2</span>
+<span class="n">find</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">},</span> <span class="mi">7</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">3</span>
+</pre></div>
 </div>
+</section>
+<section id="sorting">
+<h3>Sorting<a class="headerlink" href="#sorting" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Implement selection sort.  Your function should take an ArrayList<Integer> as
+input, and return another ArrayList<Integer> with the same values sorted.</p></li>
+<li><p>Implement insertion sort.</p></li>
+<li><p>Implement bubble sort.</p></li>
+<li><p>Implement merge sort.</p></li>
+</ul>
+</section>
+<section id="binary-search">
+<h3>Binary Search<a class="headerlink" href="#binary-search" title="Permalink to this headline">#</a></h3>
+<p>Implement a binary search function.  Remember: the input list must be sorted in
+order for this to work.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -664,7 +744,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./unit3_string_math"
+            path: "./unit14_algorithms"
         },
         predefinedOutput: true
     }
@@ -678,17 +758,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../unit2_functions_testing/Unit2_Assignment.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Unit 2 Assignment</p>
+            <p class="prev-next-title">Unit 14 - Algorithms</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Unit3_Assignment.html" title="next page">
+    <a class='right-next' id="next-link" href="../about.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unit 3 Assignment</p>
+        <p class="prev-next-title">About</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -18,6 +18,12 @@ know where to look for .jar files.
 export CLASSPATH=".:/Applications/Processing.app/Contents/Java/core/library/*"
 ```
 
+For Processing Sound, include the path to the Sound library in
+CLASSPATH: 
+```
+"$HOME/Documents/Processing4/libraries/sound/library/*"
+```
+
 You will want to add this line to your shell initialization file, e.g.
 ```.bash_profile```, ```.bashrc```, or ```.zshrc``` depending on your
 setup.
