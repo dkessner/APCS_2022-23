@@ -61,4 +61,7 @@ chapters:
     - file: unit14_algorithms/index
       sections:
       - file: unit14_algorithms/Unit14_Assignment
+    - file: unit15_recursion/index
+      sections:
+      - file: unit15_recursion/Unit15_Assignment
     - file: about
