@@ -4,7 +4,7 @@ AP Computer Science 2022-23
 Dr. Kessner  
 Marlborough School, Los Angeles  
 
-[live site](https://dkessner.github.io/APCS/)  
+[live site](https://dkessner.github.io/APCS_2022-23/)  
 
 ## Previous website
 
